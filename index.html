@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Countdown to Brexit 2019</title>
+	<meta name="author" content="Santiago Méndez">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/stylexit.css">
+</head>
+
+<body>
+	<div class="everything">
+		<div class="container">
+			<h1>Brexit Countdown!</h1>
+			<div class="countdown">
+				<p>Here goes countdown</p>
+				<div id="clock"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="js/moment.min.js"></script>
+	<script src="js/moment-timezone-with-data.min.js"></script>
+	<script src="js/countdown.min.js"></script>
+	<script src="js/moment-countdown.min.js"></script>
+	<script>
+		//$(function() {
+		/*	moment.tz.add('Europe/London|GMT BST BDST|0 -10 -20|0101010101010101010101010101010101010101010101010121212121210101210101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010|-2axa0 Rc0 1fA0 14M0 1fc0 1g00 1co0 1dc0 1co0 1oo0 1400 1dc0 19A0 1io0 1io0 WM0 1o00 14o0 1o00 17c0 1io0 17c0 1fA0 1a00 1lc0 17c0 1io0 17c0 1fA0 1a00 1io0 17c0 1io0 17c0 1fA0 1cM0 1io0 17c0 1fA0 1a00 1io0 17c0 1io0 17c0 1fA0 1a00 1io0 1qM0 Dc0 2Rz0 Dc0 1zc0 Oo0 1zc0 Rc0 1wo0 17c0 1iM0 FA0 xB0 1fA0 1a00 14o0 bb0 LA0 xB0 Rc0 1wo0 11A0 1o00 17c0 1fA0 1a00 1fA0 1cM0 1fA0 1a00 17c0 1fA0 1a00 1io0 17c0 1lc0 17c0 1fA0 1a00 1io0 17c0 1io0 17c0 1fA0 1a00 1a00 1qM0 WM0 1qM0 11A0 1o00 WM0 1qM0 WM0 1qM0 WM0 1qM0 WM0 1tA0 IM0 90o0 U00 1tA0 U00 1tA0 U00 1tA0 U00 1tA0 WM0 1qM0 WM0 1qM0 WM0 1tA0 U00 1tA0 U00 1tA0 11z0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 11A0 1o00 11A0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1o00 11A0 1o00 11A0 1o00 14o0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00|10e6');
+		
+			moment("1982-05-25").countdown().toString();*/
+		//	var brexit = moment.tz("2019-31-10 00:00", "Europe/London");
+
+		//	$('#clock').countdown(brexit.toDate(), function(event) {
+		//		$(this).html(event.strftime('%D days %H:%M:%S'));
+		//	});
+		//	});
+		window.onload = function(e) {
+
+			var $clock = $('#clock'),
+				eventTime = moment('27-11-2020 08:30:00', 'DD-MM-YYYY HH:mm:ss').unix(),
+				currentTime = moment().unix(),
+				diffTime = eventTime - currentTime,
+				duration = moment.duration(diffTime * 1000, 'milliseconds'),
+				interval = 1000;
+
+			// if time to countdown
+			if (diffTime > 0) {
+
+				// Show clock
+				// $clock.show();
+
+				var $d = $('<div class="days" ></div>').appendTo($clock),
+					$h = $('<div class="hours" ></div>').appendTo($clock),
+					$m = $('<div class="minutes" ></div>').appendTo($clock),
+					$s = $('<div class="seconds" ></div>').appendTo($clock);
+
+				setInterval(function() {
+
+					duration = moment.duration(duration.asMilliseconds() - interval, 'milliseconds');
+					var d = moment.duration(duration).days(),
+						h = moment.duration(duration).hours(),
+						m = moment.duration(duration).minutes(),
+						s = moment.duration(duration).seconds();
+
+					d = $.trim(d).length === 1 ? '0' + d : d;
+					h = $.trim(h).length === 1 ? '0' + h : h;
+					m = $.trim(m).length === 1 ? '0' + m : m;
+					s = $.trim(s).length === 1 ? '0' + s : s;
+
+					// show how many hours, minutes and seconds are left
+					$d.text(d);
+					$h.text(h);
+					$m.text(m);
+					$s.text(s);
+
+				}, interval);
+
+			}
+
+		};
+
+	</script>
+</body>
+
+</html>
