@@ -10,10 +10,10 @@ A better (than I've seen out there) countdown website to the deadline for a Brex
 - A ticker at the top with a Brexit newsfeed or Twitter feed (looked into both, couldn't find any simple solutions for either)
 - Trigger an event when the countdown finishes. Could be a text, an image or something like that.
 
-  ## Dependencies
+ ## Dependencies
 
-  - [Bootstrap](https://github.com/twbs/bootstrap)
-  - [jQuery](https://github.com/jquery/jquery)
-  - [Moment.js](https://github.com/moment/moment)
-  - [Moment Timezone](https://github.com/moment/moment-timezone)
-  - [Countdown.js](https://github.com/mckamey/countdownjs)
+ - [Bootstrap](https://github.com/twbs/bootstrap)
+ - [jQuery](https://github.com/jquery/jquery)
+ - [Moment.js](https://github.com/moment/moment)
+ - [Moment Timezone](https://github.com/moment/moment-timezone)
+ - [Countdown.js](https://github.com/mckamey/countdownjs)
