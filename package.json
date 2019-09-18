@@ -1,0 +1,28 @@
+{
+  "name": "brexitcountdown2019",
+  "version": "1.0.0",
+  "description": "A countdown to England's deadline to exit the EU",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twinysam/BrexitCountdown2019.git"
+  },
+  "keywords": [
+    "countdown",
+    "brexit",
+    "website",
+    "eu"
+  ],
+  "author": "Santiago Mendez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twinysam/BrexitCountdown2019/issues"
+  },
+  "homepage": "https://github.com/twinysam/BrexitCountdown2019#readme",
+  "dependencies": {
+    "npm": "^6.11.3"
+  }
+}

@@ -1,18 +1,37 @@
 body {
-	background-color: black;
+	background-color: #0c0c0c;
+	background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23262626' fill-opacity='0.41' fill-rule='evenodd'/%3E%3C/svg%3E");
 	color: white;
+	font-family: 'Work Sans', sans-serif;
 	text-align: center;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Work+Sans:100,400&display=swap');
 
 .everything {
 	width: 100%;
 	height: 100%;
 }
 
+.everything .ticker {
+	width: 100%;
+	height: 50px;
+	background-color: red;
+	color: white;
+}
+
+.everything .ticker ul#newsTicker li {
+	font-size: 2.5vw;
+}
+
 .container {
+	margin-top: 1%;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
 
 .countdown {
@@ -21,14 +40,25 @@ body {
 	margin-right: auto;
 }
 
+.countdown h1 {
+	font-size: 6vw;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.countdown p {
+	font-weight: 400;
+	font-size: 1.5vw;
+}
+
 #clock {
 	display: flex;
 	justify-content: space-around;
 }
 
-#clock span  {
+#clock .time {
 	display: inline-block;
-	font-family: monospace;
+	font-family: 'Anonymous Pro', monospace;
 	font-size: 10vw;
 }
 
@@ -36,16 +66,17 @@ body {
 	margin-right: 0;
 }*/
 
-.labels {
-	font-family: monospace;
-	font-size: 18px;
-	display: flex;
-	justify-content: space-around;
+span.labels {
+	display: block;
+	font-size: 1.5vw;
+	font-family: 'Work Sans', sans-serif;
+	/*display: flex;
+	justify-content: space-around;*/
 }
 
-.label_box {
+/*.label_box {
 	display: inline-block;
-}
+}*/
 
 /*.labels span:last-child {
 	margin-right: 0;

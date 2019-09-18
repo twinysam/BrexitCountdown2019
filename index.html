@@ -17,44 +17,55 @@
 
 <body>
 	<div class="everything">
+		<!--<div class="ticker">
+			<ul id="newsTicker">
+				<li>BREXIT news go here. &bull;</li>
+				<li>Boris Johnson this, Boris Johnson that. &bull;</li>
+				<li>Confusing british things happen. &bull;</li>
+			</ul>
+		</div>-->
 		<div class="container">
-			<h1>Brexit Countdown!</h1>
+
 			<div class="countdown">
-				<p>Here goes countdown</p>
-				<div id="clock"></div>
-				<div class="labels">
-					<div class="label_box">
-						<span>Days</span>
-					</div>
-					<div class="label_box">
-						<span>Hours</span>
-					</div>
-					<div class="label_box">
-						<span>Minutes</span>
-					</div>
-					<div class="label_box">
-						<span>Seconds</span>
-					</div>
+				<h1>Brexit Countdown</h1>
+				<p>Time left for the UK to make a deal before exiting the EU.</p>
+				<div id="clock">
+					<!--<div class="time">48 <span class="labels">days</span></div>
+						<div class="time">23 <span class="labels">hours</span></div>
+						<div class="time">24 <span class="labels">minutes</span></div>
+						<div class="time">57 <span class="labels">seconds</span></div>-->
 				</div>
+
 			</div>
 
 		</div>
 	</div>
-
+	<script src="js/jquery.webticker.min.js" type="text/javascript"></script>
 	<script src="js/moment.min.js"></script>
 	<script src="js/moment-timezone-with-data.min.js"></script>
 	<script src="js/jquery.countdown.min.js"></script>
-	<!--<script src="js/countdown.min.js"></script>
-	<script src="js/moment-countdown.min.js"></script>-->
 	<script>
 		$(document).ready(function () {
-
-			var breXit = moment.tz("2019-10-31 00:00", "Europe/London");
+			// I see that SkyNews has their own countdown set to 23:00, so I'm going with that for the time being
+			var breXit = moment.tz("2019-10-31 22:59:59", "Europe/London");
 
 			$('#clock').countdown(breXit.toDate(), function (event) {
-				$(this).html(event.strftime('<span>%D %H %M %S</span>'));
-				//  $(this).html(event.strftime('%D days %H:%M:%S'));
+				$(this).html(event.strftime('' +
+					'<div class="time">%D  <span class="labels">days</span></div>' +
+					'<div class="time">%H  <span class="labels">hours</span></div>' +
+					'<div class="time">%M  <span class="labels">minutes</span></div>' +
+					'<div class="time">%S <span class="labels">seconds</span></div>'));
 			});
+
+			/*$('#newsTicker').webTicker({
+				height: '50px',
+				duplicate: true,
+				rssfrequency: 30,
+				rssurl:'https://www.theguardian.com/uk/rss',
+				startEmpty: false,
+				hoverpause: false,
+				transition: "linear"
+			});*/
 
 		});
 	</script>
