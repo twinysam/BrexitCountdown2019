@@ -1,10 +1,10 @@
 # Brexit Countdown 2019
 
-![Screenshot for Brexit countdown](https://repository-images.githubusercontent.com/201351412/92626a80-da46-11e9-8b25-22b2a532d419)
-
  https://twinysam.github.io/BrexitCountdown2019/
 
 A better (than I've seen out there) countdown website to the deadline for a Brexit deal (October 31st, 2019 at 11pm). For instance, I'm not using local time but UK time, so the countdown will be consistent regardless of your OS's time. And I'm keeping the design clean, simple and minimalistic.
+
+![Screenshot for Brexit countdown](https://repository-images.githubusercontent.com/201351412/92626a80-da46-11e9-8b25-22b2a532d419)
 
 ## Wishlist of things I would like to add but probably never will
 
