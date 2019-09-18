@@ -21,9 +21,9 @@ body {
 	color: white;
 }
 
-.everything .ticker ul#newsTicker li {
+/*.everything .ticker ul#newsTicker li {
 	font-size: 2.5vw;
-}
+}*/
 
 .container {
 	width: 80%;
@@ -63,22 +63,91 @@ body {
 	font-size: 10vw;
 }
 
-/*.count:last-child {
-	margin-right: 0;
-}*/
-
 span.labels {
 	display: block;
 	font-size: 1.5vw;
 	font-family: 'Work Sans', sans-serif;
-	/*display: flex;
-	justify-content: space-around;*/
 }
 
-/*.label_box {
-	display: inline-block;
-}*/
+/* MEDIA QUERIES */
 
-/*.labels span:last-child {
-	margin-right: 0;
-}*/
+@media (max-width: 1200px) {
+	.container {
+		width: 100%;
+	}
+}
+
+@media (max-width: 800px) {
+	.countdown h1 {
+		font-size: 8vw;
+	}
+	
+	.countdown p {
+		font-size: 2.5vw;
+	}
+
+	#clock .time {
+		font-size: 12vw;
+	}
+	
+	span.labels {
+		font-size: 2vw;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 100%;
+	}
+
+	#clock .time {
+		display: block;
+		font-size: 16vw;
+	}
+	
+	span.labels {
+		font-size: 3vw;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.countdown h1 {
+		font-size: 10vw;
+	}
+	
+	.countdown p {
+		font-size: 4vw;
+	}
+
+	#clock .time {
+		font-size: 16vw;
+	}
+	
+	span.labels {
+		font-size: 3vw;
+	}
+}
+
+@media (max-width: 450px) {
+	#clock {
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.countdown h1 {
+		font-size: 13vw;
+	}	
+
+	#clock .time {
+		font-size: 22vw;
+	}
+
+	span.labels {
+		font-size: 4vw;
+	}
+
+}

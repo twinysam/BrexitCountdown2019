@@ -40,14 +40,14 @@
 
 		</div>
 	</div>
-	<script src="js/jquery.webticker.min.js" type="text/javascript"></script>
+	<!--<script src="js/jquery.webticker.min.js" type="text/javascript"></script>-->
 	<script src="js/moment.min.js"></script>
 	<script src="js/moment-timezone-with-data.min.js"></script>
 	<script src="js/jquery.countdown.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			// I see that SkyNews has their own countdown set to 23:00, so I'm going with that for the time being
-			var breXit = moment.tz("2019-10-31 22:59:59", "Europe/London");
+			// I see that SkyNews has their own countdown set to 23:00, so I'm going with that.
+			var breXit = moment.tz("2019-10-31 23:00:00", "Europe/London");
 
 			$('#clock').countdown(breXit.toDate(), function (event) {
 				$(this).html(event.strftime('' +
