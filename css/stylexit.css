@@ -15,15 +15,16 @@ body {
 }
 
 .everything .ticker {
+	position: absolute;
 	width: 100%;
 	height: 50px;
-	background-color: red;
+	background-color: rgb(100, 16, 16);
 	color: white;
 }
 
-/*.everything .ticker ul#newsTicker li {
+.everything .ticker ul#newsTicker li {
 	font-size: 2.5vw;
-}*/
+}
 
 .container {
 	width: 80%;
@@ -50,6 +51,31 @@ body {
 	font-weight: 400;
 	font-size: 1.5vw;
 	margin-bottom: 0;
+}
+
+a, a:visited {
+	color: rgb(80, 80, 193);
+}
+
+a:hover {
+	color: rgb(104, 104, 249);
+}
+
+a:active {
+	color: rgb(84, 84, 170);
+}
+
+a.github {
+	position: absolute;
+	bottom: 1vw;
+	right: 1vw;
+	opacity: 0.25;
+	border: none;
+	text-decoration: none;
+}
+
+a.github:hover, a.github:active {
+	opacity: 1;
 }
 
 #clock {
@@ -107,6 +133,11 @@ span.labels {
 	
 	span.labels {
 		font-size: 3vw;
+	}
+
+	a.github {
+		bottom: 4vw;
+		right: 4vw;
 	}
 }
 
