@@ -8,9 +8,9 @@ A better (than I've seen out there) countdown website to the deadline for a Brex
 
 ## Wishlist of things I would like to add but probably never will
 
-- A progress bar besides the clock countdown, maybe with a dancing Boris heading for the deadline. (No idea how to do it with moment.js and/or countdown.js)
-- A ticker at the top with a Brexit newsfeed or Twitter feed (looked into both, couldn't find any simple solutions for either)
-- Trigger an event when the countdown finishes. Could be a text, an image or something like that.
+- [ ] A progress bar besides the clock countdown, maybe with a dancing Boris heading for the deadline. (No idea how to do it with moment.js and/or countdown.js)
+- [ ] A ticker at the top with a Brexit newsfeed or Twitter feed (looked into both, couldn't find any simple solutions for either)
+- [ ] Trigger an event when the countdown finishes. Could be a text, an image or something like that.
 
  ## Dependencies
 
