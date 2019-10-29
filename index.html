@@ -49,8 +49,7 @@
 	<script src="js/jquery.countdown.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			// I see that SkyNews has their own countdown set to 23:00, so I'm going with that.
-			var breXit = moment.tz("2019-10-31 23:00:00", "Europe/London");
+			var breXit = moment.tz("2020-01-31 00:00:00", "Europe/London");
 
 			$('#clock').countdown(breXit.toDate(), function (event) {
 				$(this).html(event.strftime('' +
