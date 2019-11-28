@@ -18,4 +18,4 @@ A better (than I've seen out there) countdown website to the deadline for a Brex
  - [jQuery](https://github.com/jquery/jquery)
  - [Moment.js](https://github.com/moment/moment)
  - [Moment Timezone](https://github.com/moment/moment-timezone)
- - [Countdown.js](https://github.com/mckamey/countdownjs)
+ - [jQuery.countdown](https://github.com/hilios/jQuery.countdown)
