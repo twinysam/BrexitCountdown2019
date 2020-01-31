@@ -46,7 +46,10 @@ body {
 	font-weight: 100;
 	text-transform: uppercase;
 }
-
+.countdown h2 {
+	font-size: 4vw;
+	margin-top: 1.5%;
+}
 .countdown p {
 	font-weight: 400;
 	font-size: 1.5vw;
