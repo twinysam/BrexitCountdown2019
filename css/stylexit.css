@@ -1,187 +1,193 @@
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Work+Sans:100,400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro|Work+Sans:100,400&display=swap");
 
 body {
-	background-color: #0c0c0c;
-	background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23262626' fill-opacity='0.41' fill-rule='evenodd'/%3E%3C/svg%3E");
-	color: white;
-	font-family: 'Work Sans', sans-serif;
-	text-align: center;
-	overflow: hidden;
+  background-color: #0c0c0c;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23262626' fill-opacity='0.41' fill-rule='evenodd'/%3E%3C/svg%3E");
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  overflow: hidden;
 }
 
 .everything {
-	width: 100%;
-	height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 .everything .ticker {
-	position: absolute;
-	width: 100%;
-	height: 50px;
-	background-color: rgb(100, 16, 16);
-	color: white;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(100, 16, 16);
+  color: white;
 }
 
 .everything .ticker ul#newsTicker li {
-	font-size: 2.5vw;
+  font-size: 2.5vw;
 }
 
 .container {
-	width: 80%;
-	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	align-items: center;
+  width: 80%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 
 .countdown {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .countdown h1 {
-	font-size: 6vw;
-	font-weight: 100;
-	text-transform: uppercase;
+  font-size: 6vw;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 .countdown h2 {
-	font-size: 4vw;
-	margin-top: 1.5%;
-}
-.countdown p {
-	font-weight: 400;
-	font-size: 1.5vw;
-	margin-bottom: 0;
+  font-size: 4vw;
+  margin-top: 1.5%;
 }
 
-a, a:visited {
-	color: rgb(80, 80, 193);
+.countdown h2 span {
+  text-decoration: line-through;
+  font-size: smaller;
+}
+
+.countdown p {
+  font-weight: 400;
+  font-size: 1.5vw;
+  margin-bottom: 0;
+}
+
+a,
+a:visited {
+  color: rgb(80, 80, 193);
 }
 
 a:hover {
-	color: rgb(104, 104, 249);
+  color: rgb(104, 104, 249);
 }
 
 a:active {
-	color: rgb(84, 84, 170);
+  color: rgb(84, 84, 170);
 }
 
 a.github {
-	position: absolute;
-	bottom: 1vw;
-	right: 1vw;
-	opacity: 0.25;
-	border: none;
-	text-decoration: none;
+  position: absolute;
+  bottom: 1vw;
+  right: 1vw;
+  opacity: 0.25;
+  border: none;
+  text-decoration: none;
 }
 
-a.github:hover, a.github:active {
-	opacity: 1;
+a.github:hover,
+a.github:active {
+  opacity: 1;
 }
 
 #clock {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 #clock .time {
-	display: inline-block;
-	font-family: 'Anonymous Pro', monospace;
-	font-size: 10vw;
+  display: inline-block;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 10vw;
 }
 
 span.labels {
-	display: block;
-	font-size: 1.5vw;
-	font-family: 'Work Sans', sans-serif;
+  display: block;
+  font-size: 1.5vw;
+  font-family: "Work Sans", sans-serif;
 }
 
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px) {
-	.container {
-		width: 100%;
-	}
+  .container {
+    width: 100%;
+  }
 }
 
 @media (max-width: 800px) {
-	.countdown h1 {
-		font-size: 8vw;
-	}
-	
-	.countdown p {
-		font-size: 2.5vw;
-	}
+  .countdown h1 {
+    font-size: 8vw;
+  }
 
-	#clock .time {
-		font-size: 12vw;
-	}
-	
-	span.labels {
-		font-size: 2vw;
-	}
+  .countdown p {
+    font-size: 2.5vw;
+  }
+
+  #clock .time {
+    font-size: 12vw;
+  }
+
+  span.labels {
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 768px) {
-	.container {
-		max-width: 100%;
-	}
+  .container {
+    max-width: 100%;
+  }
 
-	#clock .time {
-		display: block;
-		font-size: 16vw;
-	}
-	
-	span.labels {
-		font-size: 3vw;
-	}
+  #clock .time {
+    display: block;
+    font-size: 16vw;
+  }
 
-	a.github {
-		bottom: 4vw;
-		right: 4vw;
-	}
+  span.labels {
+    font-size: 3vw;
+  }
+
+  a.github {
+    bottom: 4vw;
+    right: 4vw;
+  }
 }
 
 @media (max-width: 600px) {
+  .countdown h1 {
+    font-size: 10vw;
+  }
 
-	.countdown h1 {
-		font-size: 10vw;
-	}
-	
-	.countdown p {
-		font-size: 4vw;
-	}
+  .countdown p {
+    font-size: 4vw;
+  }
 
-	#clock .time {
-		font-size: 16vw;
-	}
-	
-	span.labels {
-		font-size: 3vw;
-	}
+  #clock .time {
+    font-size: 16vw;
+  }
+
+  span.labels {
+    font-size: 3vw;
+  }
 }
 
 @media (max-width: 450px) {
-	#clock {
-		width: 75%;
-		margin-left: auto;
-		margin-right: auto;
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
+  #clock {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-	.countdown h1 {
-		font-size: 13vw;
-	}	
+  .countdown h1 {
+    font-size: 13vw;
+  }
 
-	#clock .time {
-		font-size: 22vw;
-	}
+  #clock .time {
+    font-size: 22vw;
+  }
 
-	span.labels {
-		font-size: 4vw;
-	}
-
+  span.labels {
+    font-size: 4vw;
+  }
 }
