@@ -1,5 +1,7 @@
 # Brexit Countdown 2019
 
+Update 2023: Brexit happened. The project is done. I'll archive this. Also, **I don't recommend using this repo as the basis for another countdown**, it's using dated dependencies like jQuery (ugh) and MomentJS which is a legacy project.
+
  https://twinysam.github.io/BrexitCountdown2019/
 
 A better (than I've seen out there) countdown website to the deadline for a Brexit deal (October 31st, 2019 at 11pm). For instance, I'm not using local time but UK time, so the countdown will be consistent regardless of your OS's time. And I'm keeping the design clean, simple and minimalistic.
